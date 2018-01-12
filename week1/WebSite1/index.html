@@ -3,9 +3,183 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Week 1</title>
+    <link rel="stylesheet" type="text/css" href="Content/Reset.css" />
+    <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
+    <h1>Week 1</h1>
+
+    <form method="get">
+
+        <!--// intercept it with javascript
+        // allow javascript to edit/validate
+        // then javascript that does post to the server-->
+        <!--// kebab case-->
+        <!--all lower case with hyphens separating looks-like-this-->
+
+        <label>
+            Last Name:
+            <input type="text" name="last-name" autofocus required />
+        </label>
+        <br />
+        <label>
+            First Name:
+            <input type="text" name="first-name" required />
+        </label>
+        <br />
+        <label>
+            Middle Name:
+            <input type="text" name="middle-name" placeholder="not required, placeholder" />
+        </label>
+        <br />
+        <label>
+            Pet Name:
+            <input type="text" name="pet-name" />
+        </label>
+        <br />
+
+        <label>Type of animal to adopt:</label>
+        <select name="animal">
+            <option value="">Please select</option>
+            <option value="turtle">Turtle</option>
+            <option value="python">Python</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <!--<option value="hamster" selected>Hamster</option>-->
+        </select>
+
+        <!--select required
+        blank option, test in javascript-->
+
+        <br />
+        <label>
+            How much outdoor space will your pet have to play in?
+
+            <textarea name="outdoor" cols="100" rows="5">Please enter text here
+            </textarea>
+        </label>
+
+
+        <br />
+
+        <fieldset>
+            <legend>Do you have other pets at home?</legend>
+            <label>
+                Yes
+                <input type="radio" name="other-pets" value="yes" />
+            </label>
+            <label>
+                No
+                <input type="radio" name="other-pets" value="no" />
+            </label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>Is your refrigerator running?</legend>
+            <label>
+                Yes
+                <input type="radio" name="refrig" value="yes" />
+            </label>
+            <label>
+                No
+                <input type="radio" name="refrig" value="no" />
+            </label>
+        </fieldset>
+        <br />
+
+        <fieldset>
+            <legend>What color of animal do you want?</legend>
+            <label>
+                Brown
+                <input type="checkbox" name="color[]" value="Brown" />
+            </label>
+            <label>
+                Green
+                <input type="checkbox" name="color[]" value="Green" />
+            </label>
+        </fieldset>
+        <!--name="color[]" sends collection of values to server-->
+        <br />
+
+
+        <fieldset>
+            <legend>What access do you have to the house?</legend>
+            <label>
+                Cat Door
+                <input type="checkbox" name="door[]" value="CatDoor" />
+            </label>
+            <label>
+                Dog Door
+                <input type="checkbox" name="door[]" value="DogDoor" />
+            </label>
+        </fieldset>
+
+        <hr />
+        <br />
+        <label>
+            Password:
+            <input type="password" name="password" disabled />
+        </label>
+
+        <br />
+        <label>
+            Height
+            <input type="number" name="height" />
+        </label>
+
+        <br />
+        <label>
+            URL
+            <input type="url" name="my-url" />
+        </label>
+
+        <br />
+
+        <label>
+            Range
+            <input type="range" min="0" max="100" name="my-range" />
+        </label>
+
+        <br />
+        <label>
+            Date
+            <input type="date" name="my-date" />
+        </label>
+
+        <br />
+
+        <label>
+            email
+            <input type="email" name="my-email" />
+        </label>
+
+        <br />
+
+
+
+
+
+
+
+
+
+        <hr />
+
+        <br />
+        <input type="submit" value="Apply Now" />
+
+
+
+
+
+
+    </form>
+
 
 </body>
 </html>

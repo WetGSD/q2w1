@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Week 1</title>
+    <title>Week 1 Responsive Web Design</title>
     <link rel="stylesheet" type="text/css" href="Content/Reset.css" />
     <link rel="stylesheet" type="text/css" href="Content/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
@@ -16,21 +16,30 @@
 <body>
     <h1>Responsive Web Design</h1>
 
+
+    <p>
+        Responsive Web Design solves the problem of displaying web content well on all devices.
+    </p>
+    <p>
+        Fixed web page designs for a desktop or laptop do not scale well to a phone or a tablet such that the site may be avoided by customers with phones or tablets.
+    </p>
+    <p>
+        Adaptive design was used for particular screen sizes, but responsive design is meant to change the web page appearance and adjust to the size of the screen or with resizing of the browser window.
+    </p>
+    <p>
+        Responsive Web Design is using HTML and CSS to make web pages look good on all devices.
+    </p>
+    <p>
+        Pages are designed first for smaller screens and include all the required fields and content.
+    </p>
+    <p>
+        HTML and CSS are used to resize, shrink or enlarge content to fit any screen.
+    </p>
+
+    <h3>Please fill out the form below for more information</h3>
+
     <form method="get">
 
-        <!--// intercept it with javascript
-        // allow javascript to edit/validate
-        // then javascript that does post to the server-->
-        <!--// kebab case-->
-        <!--all lower case with hyphens separating looks-like-this-->
-
-        <p>
-            Responsive Web Design is using HTML and CSS to make web pages look good on all devices.
-
-            Pages are designed first for smaller screens and include all the required fields and content.
-
-            HTML and CSS are used to resize, shrink or enlarge content to fit any screen.
-        </p>
         <label>
             Last Name:
             <input type="text" name="last-name" autofocus required />
@@ -43,150 +52,79 @@
         <br />
         <label>
             Middle Name:
-            <input type="text" name="middle-name" placeholder="not required, placeholder" />
+            <input type="text" name="middle-name" placeholder="NMI" />
         </label>
         <br />
         <label>
-            Pet Name:
-            <input type="text" name="pet-name" />
+            Email:
+            <input type="email" name="customer-email" required />
         </label>
         <br />
+        <fieldset>
+            <legend>Create Account?</legend>
+            <label>
+                Yes
+                <input type="radio" name="create-account" value="yes" />
+            </label>
+            <label>
+                No
+                <input type="radio" name="create-account" value="no" />
+            </label>
+            <label>
+                Password:
+                <input type="password" name="password" />
+            </label>
+        </fieldset>
+        <br />
+        
 
-        <label>Type of animal to adopt:</label>
+        <br />
+        <label>Occupation:</label>
         <select name="animal">
             <option value="">Please select</option>
-            <option value="turtle">Turtle</option>
-            <option value="python">Python</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <!--<option value="hamster" selected>Hamster</option>-->
+            <option value="student">Student</option>
+            <option value="programmer">Programmer</option>
+            <option value="analyst">Analyst</option>
+            <option value="tester">Tester</option>
+            <option value="manager">Manager</option>
+            <option value="Other">Other</option>
         </select>
 
-        <!--select required
-        blank option, test in javascript-->
+        <br />
+        <label>
+            Years of Experience
+            <input type="number" name="years-of-experience" value="0" />
+        </label>
+
+        <br />
+
+        <fieldset>
+            <legend>What aspects of web coding do you like?</legend>
+            <label>
+                HTML
+                <input type="checkbox" name="likes-to-code[]" value="HTML" />
+            </label>
+            <label>
+                JavaScript
+                <input type="checkbox" name="likes-to-code[]" value="JavaScript" />
+            </label>
+            <label>
+                Cascading Style Sheets
+                <input type="checkbox" name="likes-to-code[]" value="CSS" />
+            </label>
+        </fieldset>
+
+
 
         <br />
         <label>
-            How much outdoor space will your pet have to play in?
+            Please enter other questions you might have?
 
-            <textarea name="outdoor" cols="100" rows="5">Please enter text here
+            <textarea name="questions" cols="100" rows="5">Please enter questions here
             </textarea>
         </label>
-
-
         <br />
-
-        <fieldset>
-            <legend>Do you have other pets at home?</legend>
-            <label>
-                Yes
-                <input type="radio" name="other-pets" value="yes" />
-            </label>
-            <label>
-                No
-                <input type="radio" name="other-pets" value="no" />
-            </label>
-        </fieldset>
-        <br />
-
-        <fieldset>
-            <legend>Is your refrigerator running?</legend>
-            <label>
-                Yes
-                <input type="radio" name="refrig" value="yes" />
-            </label>
-            <label>
-                No
-                <input type="radio" name="refrig" value="no" />
-            </label>
-        </fieldset>
-        <br />
-
-        <fieldset>
-            <legend>What color of animal do you want?</legend>
-            <label>
-                Brown
-                <input type="checkbox" name="color[]" value="Brown" />
-            </label>
-            <label>
-                Green
-                <input type="checkbox" name="color[]" value="Green" />
-            </label>
-        </fieldset>
-        <!--name="color[]" sends collection of values to server-->
-        <br />
-
-
-        <fieldset>
-            <legend>What access do you have to the house?</legend>
-            <label>
-                Cat Door
-                <input type="checkbox" name="door[]" value="CatDoor" />
-            </label>
-            <label>
-                Dog Door
-                <input type="checkbox" name="door[]" value="DogDoor" />
-            </label>
-        </fieldset>
-
-        <hr />
-        <br />
-        <label>
-            Password:
-            <input type="password" name="password" disabled />
-        </label>
-
-        <br />
-        <label>
-            Height
-            <input type="number" name="height" />
-        </label>
-
-        <br />
-        <label>
-            URL
-            <input type="url" name="my-url" />
-        </label>
-
-        <br />
-
-        <label>
-            Range
-            <input type="range" min="0" max="100" name="my-range" />
-        </label>
-
-        <br />
-        <label>
-            Date
-            <input type="date" name="my-date" />
-        </label>
-
-        <br />
-
-        <label>
-            email
-            <input type="email" name="my-email" />
-        </label>
-
-        <br />
-
-
-
-
-
-
-
-
-
-        <hr />
-
-        <br />
-        <input type="submit" value="Apply Now" />
-
-
-
-
-
+        <input type="submit" value="Request Information" />
 
     </form>
 
